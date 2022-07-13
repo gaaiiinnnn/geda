@@ -9,6 +9,7 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
     <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -16,36 +17,224 @@
 <body>
     <header>
         <div class="header_in">
-            <h1></h1>
+            <h1>
+                <a href="">GNT Animal Health</a>
+            </h1>
             <div class="gnb_wrap">
                 <div class="gnb_list_w">
-                    <ul calss="gnb_list">
+                    <ul class="gnb_list">
                         <li data-menuanchor="s1">
-                            <a href="#s1">GAH소개</a>
+                            <a href="#s1" class="mitem">GAH소개</a>
+                            <div class="sub_item_w">
+                                <ul class="sub_item_list">
+                                    <li>
+                                        <a href="#" class="sub_item">CEO 인사말</a>
+                                    <li>
+                                        <a href="#" class="sub_item">사업본부 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub_item">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li data-menuanchor="s2">
-                            <a href="#s2">제다큐어</a>
+                            <a href="#s2" class="mitem">제다큐어</a>
+                            <div class="sub_item_w">
+                                <ul class="sub_item_list">
+                                    <li>
+                                        <a href="#" class="sub_item">CCDS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub_item">제품 소개</a>
+                                    </li>
+                                    <li>    
+                                        <a href="#" class="sub_item">효능·효과</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub_item">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li data-menuanchor="s3">
-                            <a href="#s3">연구개발</a>
+                            <a href="#s3" class="mitem">연구개발</a>
+                            <div class="sub_item_w">
+                                <ul class="sub_item_list">
+                                    <li>
+                                        <a href="#" class="sub_item">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"class="sub_item">파이프라인</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub_item">연구 현황</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li data-menuanchor="s4">
-                            <a href="#s4">본사위치</a>
+                            <a href="#s4" class="mitem">본사위치</a>
                         </li>
                         <li data-menuanchor="s5">
-                            <a href="#s5">연구소위치</a>
+                            <a href="#s5" class="mitem">연구소위치</a>
                         </li>
                     </ul>
+                </div><!-- // gnb_list_w -->
+                <div class="national_list">
+                    <a href="#" class="nat_target">
+                        <span class="nat_target_in">KO</span>
+                    </a>
+                </div><!--national_list-->
+                <div class="totalmenu_w">
+                    <a href="#" class="btn_total">
+                        <span class="btn_total_in">Menu</span>
+                    </a>
+                </div><!-- // totalmenu_w -->
+            </div><!-- // gnb_wrap -->
+        </div><!-- // header_in -->
+    </header>
+
+    <div class="total_menu_z">
+
+    </div><!-- // total_menu_z -->
+
+    <div id="fullpage">
+        <div class="section">
+            <div class="video_w" id="s1">
+                <video data-autoplay muted playsinline loop>
+                    <source src="./video/main.mp4" type="video/mp4">
+                    <source src="./video/main.webm" type="video/webm">
+                    <!-- data-autoplay : fullpage 플러그인 사용시 -->
+                </video>
+            </div>
+            <div class="s1_w">
+                <div class="s1_in">
+                    <div class="s1_main">
+                        <span>Pet-Family's</span>Quality of Life
+                    </div>
+                    <div class="s1_sub">반려가족의 행복을 연구합니다</div>
+                </div>
+            </div>
+            <div class="s1_sns">
+                <ul>
+                    <li>
+                        <a href="#">블로그</a>
+                    </li>
+                    <li>
+                        <a href="#">인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="#">유튜브</a>
+                    </li>
+                    <li>
+                        <a href="#">페이스북</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="s2">
+            <div class="s2_bg"></div><!--오른쪽(pc)/위(mobile) 배경색-->
+            <div class="s2_img">
+                <img src="img/geda_rimg.png" alt="제다큐어pc용 이미지" class="pc">
+            </div>
+            <div class="s2_w">
+                <div class="s2_in">
+                    <div class="s2_title_w">
+                        <div class="s2_title">
+                            <img src="img/mc_geda_txt_high.png" alt="제다큐어pc" class="pc">
+                            <img src="img/mc_geda_txt_m.png" alt="제다큐어mobile" class="mobile">
+                        </div>
+                        <div class="s2_title_sub">제다큐어</div>
+                        <div class="s2_top_img">
+                            <img src="img/geda_topimg.png" alt="이미지-mobile" class="mobile">
+                        </div>
+                    </div>
+                    <div class="s2_cont">
+                        <div class="s2_item_title">
+                            개 인지기능장애증후군 (일명 '개 치매')
+                        </div>
+                        <div class="s2_item_cont">
+                            반려견은 사람의 치매와 유사하게 치매 현상이 나타납니다.<br class="pc">
+                            반려견의 11-12세에서 약 28%, 15-16세에서는 약 68%가 <br class="pc">
+                            개 인지기능장애증후군으로 진단되었습니다.
+                        </div>
+                    </div>
+                    <div class="s2_cont">
+                        <div class="s2_item_title">
+                            효능・효과
+                        </div>
+                        <div class="s2_item_cont">
+                            <ul class="s2_list">
+                                <li>
+                                    <div class="s2_item s2_item01">
+                                        <p>공간적 방향감 <br class="pc">개선</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s2_item s2_item02">
+                                        <p>보호자와의 상호작용 <br class="pc">능력향상</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s2_item s2_item03">
+                                        <p>수면 패턴의 <br class="pc">개선</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s2_item s2_item04">
+                                        <p>활력 증가</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="s2_more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div id="fullpage">
-        <div class="section">section1</div>
-        <div class="section">section2</div>
-        <div class="section">section3</div>
-        <div class="section">section4</div>
-        <div class="section">section5</div>
+
+        <div class="section" id="s3">
+            <div class="s3_w">
+                <div class="s3_title">연구개발</div>
+                <div class="s3_main">
+                    GNT<br>
+                    Animal<br class="mobile"> Health
+                </div>
+                <div class="s3_sub_w">
+                    <div class="s3_sub">
+                        <div class="s3_item_cont">
+                            크리스데살라진의 발굴을 통하여<br>
+                            세계 최초 개 인지기능장애증후군 신약 개발 성공
+                        </div>
+                    </div>
+                    <div class="s3_sub">
+                        <div class="s3_item_title">Mission</div>
+                        <div class="s3_item_cont type2">
+                            GAH는 동물건강을 지키기 위한<br>
+                            획기적인 치료제 개발에 집중하고 있습니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="s3_btn_w">
+                    <a href="#" class="s3_btn">
+                        <span>R&D</span>
+                    </a>
+                    <a href="#" class="s3_btn">
+                        <span>파이프라인</span>
+                    </a>
+                    <a href="#" class="s3_btn">
+                        <span>연구 현황</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="s4">section4</div>
+        <div class="section" id="s5">section5</div>
     </div>
 </body>
 </html>
