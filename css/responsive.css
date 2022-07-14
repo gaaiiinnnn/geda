@@ -79,6 +79,10 @@
         height:72px;
         background:#D5D5D5 url('../img/linkgo_allow_m.png') no-repeat 50% 50% / 50% auto ;
     }
+    a.s3_btn {
+        margin-right:15px;
+        padding:16px 30px;
+    }
 }
 
 
@@ -114,6 +118,16 @@
         width:40px;
         height:40px;
         background:#D5D5D5 url('../img/linkgo_allow_m.png') no-repeat 50% 50% / 60% auto;
+    }
+    .s3_item_cont {
+        font-size:1.3vw;
+    }
+    .s3_item_title {
+        font-size:1.5vw;
+        margin-bottom:10px;
+    }
+    a.s3_btn span {
+        font-size:1.3vw;
     }
 }
 
@@ -290,6 +304,51 @@
         background:url('../img/mc_geda_bg_m.png') no-repeat 50% 50% / cover;
     }
 
+    .s3_w {
+        margin:60px 30px;
+    }
+    .s3_title {
+        font-size:25px;
+    }
+    .s3_main {
+        font-size:45px;
+    }
+    
+    .s3_sub {
+        margin-top:40px;
+    }
+    .s3_item_cont {
+        font-size:17px;
+    }
+    .s3_item_title {
+        font-size:24px;
+    }
+    
+
+    .s3_btn_w {
+        margin-top:50px;
+    }
+    a.s3_btn {
+        padding:8px 15px;
+    }
+    a.s3_btn span {
+        font-size:14px;
+        padding-right:40px;
+    }
+    a.s3_btn span:before, a.s3_btn span:after {
+        position:absolute;
+        content:"";
+        top:50%;
+        right:0;
+    }
+    a.s3_btn span:before {
+        width:16px;
+    } 
+    a.s3_btn span:after {
+        width:6px;
+        height:6px;
+        right:3px;
+    }
 }
 
 

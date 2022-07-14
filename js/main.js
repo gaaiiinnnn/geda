@@ -9,6 +9,6 @@ new fullpage('#fullpage', {
     navigationTooltips: ['GHA소개', '제다큐어', '연구개발', '본사위치', '연구소위치'],
     easing: 'easeInOutCubic',
     menu: '.gnb_list',
-    anchors: ['s1', 's2', 's3', 's4', 's5'],
+    anchors: ['1st', '2nd', '3rd', '4th', '5th'],
     normalScrollElements: '#s2',
 });
