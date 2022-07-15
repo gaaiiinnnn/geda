@@ -92,6 +92,21 @@
 
 
 @media (max-width:1679px){
+    a.total_sub_item {
+        font-size:1.5vw;
+    }
+    .total_address_w {
+        bottom:40px;
+    }
+    .total_address_w  h2 {
+        font-size:1.1vw;
+    }
+    .total_address_list > li {
+        font-size:1vw;
+    }
+    .address {}
+    .tel {}
+
     .s2_bg {
         width:20%;
     }
@@ -167,13 +182,14 @@
 
     header {
         height:55px;
+        min-height:auto;
     }
     header h1 {
         margin-left:30px;
         height:55px;
     }
     header h1 a {
-        width:80px;
+        width:90px;
     }
     .gnb_list > li {
         display:none;
@@ -195,6 +211,111 @@
     .btn_total_in {
         display:none;
     }
+
+    /* total_menu_z */
+    .total_menu_z {}
+    .total_menuZ_in {
+        background-size:80% auto;
+    }
+    .total_menuZ_in h1 {
+        display:flex;
+        width:172px;
+        height:55px;
+        margin-left:30px;
+        align-items:center;
+    }
+    .total_menuZ_in h1 a {
+        display:inline-block;
+        width:90px;
+        height: 100%;
+        background: url('../img/toplogo_w.png') no-repeat center center / contain;
+        text-indent: -9999px;
+    }
+    .total_menu {
+        position:absolute;
+        top:55px;
+        bottom:0;
+        width:100%;
+        height:calc(100% - 160px);
+        overflow:hidden;
+        /* overflow-y:suto : iscroll.js 사용 안할때 자체 스크롤 */
+    }
+    ul.total_list {
+        display:block;
+        position:static;
+        width:100%;
+        height:auto;
+        padding-top:70px;
+    }
+    .total_list > li {
+        display:block;
+        text-align:center;
+        margin-bottom:35px;
+        position:static; /* 위치값, z-index 안먹힘 / 태그의 흐름에 따라 위치 */
+    }
+    a.total_mitem {
+        font-size:24px;
+    }
+    a.total_mitem:hover {
+        border-bottom:2px solid transparent;
+    }
+    a.total_mitem.active {
+        border-bottom:2px solid #fff;
+    }
+    a.total_mitem.active + .total_sub_item_w {
+        display:block;
+    }
+
+
+    .total_sub_item_w {
+        display:none;
+        padding-top:0;
+    }
+    ul.total_sub_item_list {
+        padding-top:25px;
+    }
+    a.total_sub_item {
+        font-size:16px;
+    }
+
+    .totalClose_w {
+        width:20%;
+        height:55px;
+        min-height:auto;
+        background:#fff;
+    }
+    a.btn_totalClose {
+        padding-left:0;
+    }
+    a.btn_totalClose::before, a.btn_totalClose::after {
+        left:50%;
+        background:#000;
+    }
+    span.btn_totalClose_in {
+        display:none;
+    }
+    
+    .total_address_w {
+        bottom:10px;
+        text-align:center;
+    }
+    .total_address_w  h2 {
+        font-size:18px;
+        margin-bottom:10px;
+    }
+    ul.total_address_list {
+        display:block;
+    }
+    .total_address_list > li {
+        display:block;
+        font-size:16px;
+        padding-right:0;
+        line-height:1.5;
+    }
+    .total_address_list > li.address {
+        display:none;
+    }
+    .tel {}
 
     /* section */
     
